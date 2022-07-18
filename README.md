@@ -8,6 +8,9 @@
 #### Add an task 
 <img width="530" alt="image" src="https://user-images.githubusercontent.com/34355192/179447023-1ace2ea4-3b11-4fea-93da-c1b1a44f3e0a.png">
 
+#### Complete a task
+<img width="479" alt="image" src="https://user-images.githubusercontent.com/34355192/179447689-43e1b6d3-ce49-49d5-8fb7-040f4ddc3854.png">
+
 #### Delete a task
 <img width="530" alt="image" src="https://user-images.githubusercontent.com/34355192/179447098-5b9444b7-ebb6-41ca-a3d2-821b93008462.png">
 
@@ -15,7 +18,7 @@
 <img width="530" alt="image" src="https://user-images.githubusercontent.com/34355192/179447184-7f284131-f831-4676-b4a1-2fbc18fbee69.png">
 
 #### Help
-<img width="1262" alt="image" src="https://user-images.githubusercontent.com/34355192/179447236-fb457e71-67a2-433a-9f7e-9e115cd165e8.png">
+<img width="1273" alt="image" src="https://user-images.githubusercontent.com/34355192/179447757-28c526ac-3f46-4ba1-986f-69e87fc4c266.png">
 
 
 
