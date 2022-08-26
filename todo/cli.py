@@ -1,5 +1,6 @@
 """This module provides the RP To-Do CLI."""
 # todo/cli.py
+from turtle import bgcolor
 import typer
 import time
 from typing import Optional
@@ -45,7 +46,7 @@ def update(position: int, task: str = None, category: str = None):
     show()
 
 
-@app.command("Complete an item")
+@app.command(short_help="Marks an item as complete")
 def complete(position: int):
     typer.echo(f'complete item at position {position}')
     complete_todo(position-1)
@@ -64,22 +65,22 @@ def pomo(duration: int):
     typer.echo("🍅 Time's up!")
 
 
-@ app.command(short_help='Shows all items as table')
-def show():
+@ app.command(short_help='Lists all items as table')
+def ls():
     """Lists all items in the to-do list.
     """
     tasks = get_all_todos()
 
-    console.print("[bold blue]Tasks:[/bold blue]", "💻")
-    table = Table(show_header=True, header_style="bold green")
-    table.add_column("#", style="dim", width=6)
-    table.add_column("Tasks", min_width=20)
-    table.add_column("Category", min_width=12, justify="right")
-    table.add_column("Done", min_width=12, justify="right")
+    table = Table(title="[bold blue]Todo[/bold blue]")
+    table.add_column("#", style="dim", width=3,
+                     justify="right", no_wrap=True)
+    table.add_column("Tasks", min_width=20, style="magenta")
+    table.add_column("Category", min_width=12, justify="right", style="cyan")
+    table.add_column("Done", min_width=6, justify="right")
 
     def get_categorty_colors(category: str) -> str:
         COLORS = {'Learning': 'green', 'Work': 'blue',
-                  'Home': 'red', 'Study': 'yellow', 'Sports': 'magenta'}
+                  'Home': 'red', 'Study': 'yellow', 'Sports': 'magenta', "Code": "cyan"}
         if category in COLORS:
             return COLORS[category]
 
